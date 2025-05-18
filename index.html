@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATCHING GAME</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet" type="text/css" />
+    <script defer src="assets/script.js"></script>
+</head>
+<body>
+    <header>MATCHING GAME</header>
+    <h1>SELECT YOUR CATEGORY</h1>
+    <div class="categories">
+        <button class="category" id="0"></button>
+        <button class="category" id="1"></button>
+        <button class="category" id="2"></button>
+        <button class="category" id="3"></button>
+        <button class="category" id="4"></button>
+        <button class="category" id="5"></button>
+        <button class="category" id="6"></button>
+        <button class="category" id="7"></button>
+        <button class="category" id="8"></button>
+        <button class="category" id="9"></button>
+        <button class="category" id="10"></button>
+        <button class="category" id="11"></button>
+    </div>
+    <div class="gameContainer">
+        <div class="gameBoardContainer">
+            <div class="categoryItems">
+                <div class="categoryItem"></div>
+                <div class="categoryItem"></div>
+                <div class="categoryItem"></div>
+                <div class="categoryItem"></div>
+                <div class="categoryItem"></div>
+                <div class="categoryItem"></div>
+                <div class="categoryItem"></div>
+                <div class="categoryItem"></div>
+                <div class="categoryItem"></div>
+            </div>
+            <div class="separator"></div>
+            <div class="matchingItems" draggable="false">
+                <div class="matchingItem" draggable="false"></div>
+                <div class="matchingItem" draggable="false"></div>
+                <div class="matchingItem" draggable="false"></div>
+                <div class="matchingItem" draggable="false"></div>
+                <div class="matchingItem" draggable="false"></div>
+                <div class="matchingItem" draggable="false"></div>
+                <div class="matchingItem" draggable="false"></div>
+                <div class="matchingItem" draggable="false"></div>
+                <div class="matchingItem" draggable="false"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <audio id="myAudio" controls autoplay loop>
+                Your browser does not support the audio element.
+            </audio>
+            <label class="label" id="label">
+                <input type="checkbox" id="checkbox" />
+                <span class="background">
+                  <span class="knob"></span>
+                </span>
+              </label>
+            <button class="resetBtn">Shuffle</button>
+        </div>
+    </div>
+    <div id="popup"><div id="message"></div></div>
+</body>
+</html>
